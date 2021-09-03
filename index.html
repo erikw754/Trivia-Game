@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="description" content="Kenzie" />
+    <meta name="author" content="Kenzie" />
+    <meta name="keywords" content="Kenzie" />
+
+    <!-- Title Page-->
+    <title>Kenzie JavaScript Page</title>
+
+    <!-- CSS-->
+    <link href="style.css" rel="stylesheet" media="all" />
+  
+  </head>
+
+  <center>
+    <div class="home">
+      <h1>Welcome to Trivia!</h1>
+      <h3>
+        Can you guess them all?
+      </h3>
+      <br />
+      <button type="button" class="start">Start</button>
+      <br />
+      <br />
+      <p>
+       
+          <strong>Rules: </strong> Answer a question right and keep playing. Answer a question wrong
+          and you lose.
+       
+      </p>
+    </div>
+    
+    <div class="game hidden">
+      <p id="scoreboard">
+        <b>Your Current Score is: </b>
+      </p>
+      <br />
+        <img
+          class="big hidden"
+         src= "https://hsuhistory.files.wordpress.com/2019/10/trivia.gif" 
+          alt="trivia"
+          width="300"
+          height="150"
+        />
+        <img
+          class="small hidden"
+          src= "https://wikiclipart.com/wp-content/uploads/2016/10/Questions-question-mark-clip-art-free-clipart-images-3.png" 
+          alt="question mark"
+          width="150"
+          height="150"
+        />
+      <p id="category"></p>
+      <p id="questionParagraph"></p>
+      <label for="answer" id="answer"> <strong>Final Answer: </strong></label>
+      <input type="text" id="text" name="answer" /><br />
+      <br />
+      <input type="submit" value="Submit" id="submit" />
+      <button class="playAgain hidden" id="replay">Play Again</button>
+      <p id="message"></p>
+    </div>
+    <script src="code.js"></script>
+  </center>
+  </body>
+</html>

@@ -1,72 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags-->
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <meta name="description" content="Kenzie" />
-    <meta name="author" content="Kenzie" />
-    <meta name="keywords" content="Kenzie" />
-
-    <!-- Title Page-->
-    <title>Kenzie JavaScript Page</title>
-
-    <!-- CSS-->
-    <link href="style.css" rel="stylesheet" media="all" />
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
   </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">PORTFOLIO</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span> 
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">HOME</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">ABOUT</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#skills" class="navbar__links" id="skills-page">SKILLS</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projects" class="navbar__links" id="projects-page">PROJECTS</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__links" id="contact-page">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <center>
-    <div class="home">
-      <h1>Welcome to Trivia!</h1>
-      <h3>
-        Can you guess them all?
-      </h3>
-      <br />
-      <button type="button" class="start">Start</button>
-      <br />
-      <br />
-      <p>
-       
-          <strong>Rules: </strong> Answer a question right and keep playing. Answer a question wrong
-          and you lose.
-       
-      </p>
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Hello, my name is <span>Erik.</span></h1>
+        <p class="hero__description">I'm a web developer and creative designer changing the internet one site at a time.</p>
+      </div>
     </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h1>About Me</h1>
+      <div class="about__container">
+        <div class="about__content">
+          <p> Hi, I am a 23-year-old front-end developer, designer, musician, and artist from Fort Worth, TX. I have a passion for being creative and I enjoy telling a story through everything I create. I love creating things that inspire me and I hope to inspire others with my work.</p>
+        </div>
+        
+      </div>
+    </section>
     
-    <div class="game hidden">
-      <p id="scoreboard">
-        <b>Your Current Score is: </b>
-      </p>
-      <br />
-        <img
-          class="big hidden"
-         src= "https://hsuhistory.files.wordpress.com/2019/10/trivia.gif" 
-          alt="trivia"
-          width="300"
-          height="150"
-        />
-        <img
-          class="small hidden"
-          src= "https://wikiclipart.com/wp-content/uploads/2016/10/Questions-question-mark-clip-art-free-clipart-images-3.png" 
-          alt="question mark"
-          width="150"
-          height="150"
-        />
-      <p id="category"></p>
-      <p id="questionParagraph"></p>
-      <label for="answer" id="answer"> <strong>Final Answer: </strong></label>
-      <input type="text" id="text" name="answer" /><br />
-      <br />
-      <input type="submit" value="Submit" id="submit" />
-      <button class="playAgain hidden" id="replay">Play Again</button>
-      <p id="message"></p>
+
+    <!-- Skills Section -->
+    <!-- Icons made by Pixel perfect from "https://www.flaticon.com/" -->
+    <section class="skills" id="skills">
+      <h1>Skills</h1>
+
+      <div class="skills__container">
+        <div class="skills__content">
+          <m style="float: left; font-family: 'Franklin Gothic Medium'; font-size:15pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em; padding: 5%;"><img src="images/css.png" style="width: 100%">CSS</m>
+          <m style="float: left;font-family: 'Franklin Gothic Medium'; font-size:15pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em; padding: 5%;"><img src="images/html.png" style="width: 100%">HTML</m>
+          <m style="float: left;font-family: 'Franklin Gothic Medium'; font-size:15pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em; padding: 5%;"><img src="images/java-script.png" style="width: 100%">JAVASCRIPT</m>
+          <m style="float: left;font-family: 'Franklin Gothic Medium'; font-size: 15pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em; padding: 5%;"><img src="images/structure.png" style="width: 100%">REACT</m>
+          <m style="float: left;font-family: 'Franklin Gothic Medium'; font-size: 15pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em; padding: 5%"><img src="images/illustrator (1).png" style="width: 100%">ILLUSTRATOR</m>
+          <m style="float: left;font-family: 'Franklin Gothic Medium'; font-size: 15pt; text-align: center; width: 30%; margin-right: 1%; margin-bottom: 0.5em; padding: 5%"><img src="images/photoshop.png" style="width: 100%">PHOTOSHOP</m>
+         
+ <m style="clear: both;"></m>
+             </div>
+           </div>
+       </section>
+
+     <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h1>My Projects</h1>
+      <div class="projects__wrapper">
+        <div class="projects__card">
+          <a href="https://github.com/erikw754/steelers_site" target="_blank">
+          <h2>Steelers Site</h2>
+          <img src="images/steelers.jpg" width="550" height="450" >
+          </a>
+        </div>
+        
+          <div class="projects__wrapper">
+            <div class="projects__card">
+              <a href="https://github.com/erikw754/Trivia-Game" target="_blank">
+              <h2>Trivia Game</h2>
+              <img src="images/trivia.jpg" width="550" height="450" >
+              </a>
+            </div>
+       
+    
+</div>
+</div>
+</section>
+    
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h1>Contact Me</h1>
+      <div class="contact__container">
+        <div class="contact__wrapper">
+         <div class="media">
+          <ul>
+          <li><a href="https://www.linkedin.com/in/erik-williams-a2722a1a6/" title="Linked In" target="_blank" rel="nofollow" ><i class="fab fa-linkedin"></i><span> Linked In </span></a></li>
+          <li><a href="mailto:eriknealw7@yahoo.com" title='E-Mail' target="_blank" rel="nofollow" ><i class="fas fa-envelope"></i><span> Email </span></a></li>
+          <li><a href="tel:817-655-2446" title="Number" target="_blank" rel="nofollow" ><i class="fas fa-phone"></i><span> Call </span></a></li>
+          <li><a href="https://github.com/erikw754" title="Github" target="_blank" rel="nofollow" ><i class="fab fa-github"></i><span> Github </span></a></li>
+          
+  
+          </ul>
+        </div>
+      </div>
     </div>
-    <script src="code.js"></script>
-  </center>
+    </section>
+    <!--quote-->
+    <section>
+    <div class="quote">
+    <h3 id="quoteDisplay"> </h3>
+            <body onload="newQuote()"></body>
+
+          </div>
+        </section>
+        <!-- Footer Section-->
+        <footer>
+          <div class="footer">
+             <p><small> Copyright &#169 Erik Williams 2021</p>
+          </div>
+        </footer>
+   
+    
+
+    <script src="app.js"></script>
   </body>
 </html>
